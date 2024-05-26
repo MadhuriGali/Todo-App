@@ -34,7 +34,7 @@ const TodoCards=(props)=>{
   };
     const handleDelete=async()=>{
         
-        await axios.delete("http://localhost:8000/todos/deleteTodos",config)   
+        await axios.delete("https://vercel.com/madhus-projects-e4c58fb9/todo-app/todos/deleteTodos",config)   
         deleteCard();
     }
 
