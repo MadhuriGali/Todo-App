@@ -1,1 +1,4 @@
-# This is simple todo application
+# Todo App
+
+This is simple todo application
+
