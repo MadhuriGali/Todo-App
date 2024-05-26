@@ -6,10 +6,12 @@
 ---
 #### Todo App is a simple yet powerful tool designed to help individuals organize and manage tasks efficiently
 - ####  Users can easily add new tasks to their todo list, specifying task details such as title, description
-- #### odo apps allow users to view, edit, delete, and categorize tasks based on their status (e.g., pending, completed).
+- #### Todo apps allow users to view, edit, delete, and categorize tasks based on their status (e.g., pending, completed).
 - #### Users Sign Up and Sign In with the Email IDs
 ---
 ## Tech Stack
+![NodeJs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![JWTs](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![ReactJs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
+
 
 
 
