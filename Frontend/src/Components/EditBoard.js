@@ -26,7 +26,7 @@ const EditBoard=()=>{
      const updateData=async ()=>{
         if(!newBoardname) setErrorMessage("Board name cannot be empty");
         else{
-            await axios.put("https://todo-cdl1xuda2-madhus-projects-e4c58fb9.vercel.app/board/editBoard",{
+            await axios.put("https://todo-app-eight-sage-93.vercel.app/board/editBoard",{
              boardname:newBoardname,
              oldBoardname:boardname
          },config)
