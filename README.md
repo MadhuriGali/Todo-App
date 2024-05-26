@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# This is simple todo application
-=======
+
 # Todo App
 ### This is simple todo application.
 ## Development
@@ -19,4 +17,4 @@
 
 
 
->>>>>>> ad3b7369455eba4bf5875010fdf124c3bd5fe358
+
