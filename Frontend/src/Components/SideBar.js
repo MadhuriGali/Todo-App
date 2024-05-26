@@ -38,14 +38,14 @@ const SideBar=()=>{
   };
 //console.log(config.headers.Authorization.split(" ")[1]);
    const updateSidebar=async ()=>{
-        const response=await axios.get("https://vercel.com/madhus-projects-e4c58fb9/todo-app/board/getBoards",config);
+        const response=await axios.get("https://todo-m1cxd9afo-madhus-projects-e4c58fb9.vercel.app/board/getBoards",config);
         setBoards(response?.data?.boards);
          //console.log(response);
    }
 
    const deleteAllBoards=async()=>{
 
-    await axios.delete("https://vercel.com/madhus-projects-e4c58fb9/todo-app/board/deleteAllBoards",config) ;
+    await axios.delete("https://todo-m1cxd9afo-madhus-projects-e4c58fb9.vercel.app/board/deleteAllBoards",config) ;
  
     navigate("/home")
    }
