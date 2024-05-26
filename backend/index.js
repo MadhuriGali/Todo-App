@@ -11,7 +11,7 @@ const isAuthenticated = require("./middleware/auth");
 app.use(cors(
     {
         origin:["https://todo-app-zkaj.vercel.app"],
-        methods:["POST","PUT,"GET","DELETE"],
+        methods: ["POST", "PUT", "GET", "DELETE"],
         credentials:true
     }
 ));
