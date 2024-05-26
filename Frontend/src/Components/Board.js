@@ -24,7 +24,7 @@ const Board=()=>{
         if(!boardname.current.value) setErrorMessage("Board name cannot be empty");
         else{
 
-            await axios.post("http://localhost:8000/board/addBoard",{
+            await axios.post("https://vercel.com/madhus-projects-e4c58fb9/todo-app/board/addBoard",{
             boardname:boardname.current.value
         },config)
        
