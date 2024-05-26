@@ -29,7 +29,7 @@ const EditTodo=()=>{
       if(!newTitle) setErrorMessage("titile cannot be empty");
       else if(!newDescription) setErrorMessage("description cannot be empty");
       else{
-        await axios.put("https://todo-m1cxd9afo-madhus-projects-e4c58fb9.vercel.app/todos/editTodos",{
+        await axios.put("https://todo-cdl1xuda2-madhus-projects-e4c58fb9.vercel.app/todos/editTodos",{
             boardname,
             title:newTitle,
             description:newDescription,

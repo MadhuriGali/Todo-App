@@ -32,7 +32,7 @@ const AddTodo=()=>{
         if(!title.current.value) setErrorMessage("Title cannot be empty");
         else if(!description.current.value) setErrorMessage("description cannot be empty");
         else{
-            await axios.post("https://todo-h68x093wn-madhus-projects-e4c58fb9.vercel.app/todos/addTodo",{
+            await axios.post("https://todo-cdl1xuda2-madhus-projects-e4c58fb9.vercel.app/todos/addTodo",{
             boardname:boardname,
             title:title.current.value,
             description:description.current.value,

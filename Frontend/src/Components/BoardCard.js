@@ -29,7 +29,7 @@ const BoardCard=(props)=>{
    };
     const handleDelete=async(event)=>{
       event.stopPropagation();
-      await axios.delete("https://todo-m1cxd9afo-madhus-projects-e4c58fb9.vercel.app/board/deleteBoard",config)   
+      await axios.delete("https://todo-cdl1xuda2-madhus-projects-e4c58fb9.vercel.app//board/deleteBoard",config)   
       deleteCard();
       navigate("/home")
   }
