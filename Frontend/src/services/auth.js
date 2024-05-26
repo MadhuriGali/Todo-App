@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const signUp=async (name,email,password)=>{
     try{
-        const response=await axios.post("http://localhost:8000/user/signUp",{
+        const response=await axios.post("https://todo-h68x093wn-madhus-projects-e4c58fb9.vercel.app//user/signUp",{
         name,
         email,
         password
@@ -18,7 +18,7 @@ export const signUp=async (name,email,password)=>{
 }
 export const login=async (email,password)=>{
     try{
-        const response=await axios.post("http://localhost:8000/user/login",{
+        const response=await axios.post("https://todo-h68x093wn-madhus-projects-e4c58fb9.vercel.app//user/login",{
             email,password
         })
        // console.log(response);
