@@ -38,14 +38,14 @@ const SideBar=()=>{
   };
 //console.log(config.headers.Authorization.split(" ")[1]);
    const updateSidebar=async ()=>{
-        const response=await axios.get("https://todo-app-eight-sage-93.vercel.app/board/getBoards",config);
+        const response=await axios.get("https://todo-app-315b.onrender.com/board/getBoards",config);
         setBoards(response?.data?.boards);
          //console.log(response);
    }
 
    const deleteAllBoards=async()=>{
 
-    await axios.delete("https://todo-app-eight-sage-93.vercel.app/board/deleteAllBoards",config) ;
+    await axios.delete("https://todo-app-315b.onrender.com/board/deleteAllBoards",config) ;
  
     navigate("/home")
    }

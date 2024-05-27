@@ -29,7 +29,7 @@ const EditTodo=()=>{
       if(!newTitle) setErrorMessage("titile cannot be empty");
       else if(!newDescription) setErrorMessage("description cannot be empty");
       else{
-        await axios.put("https://todo-app-eight-sage-93.vercel.app/todos/editTodos",{
+        await axios.put("https://todo-app-315b.onrender.com/todos/editTodos",{
             boardname,
             title:newTitle,
             description:newDescription,

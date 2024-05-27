@@ -29,7 +29,7 @@ const BoardCard=(props)=>{
    };
     const handleDelete=async(event)=>{
       event.stopPropagation();
-      await axios.delete("https://todo-app-eight-sage-93.vercel.app/board/deleteBoard",config)   
+      await axios.delete("https://todo-app-315b.onrender.com/board/deleteBoard",config)   
       deleteCard();
       navigate("/home")
   }

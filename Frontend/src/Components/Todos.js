@@ -28,7 +28,7 @@ const Todos=()=>{
     params:{boardname}
   };                            
     const fetchData=async()=>{
-        const response=await axios.get("https://todo-app-eight-sage-93.vercel.app/todos/getTodos",config);
+        const response=await axios.get("https://todo-app-315b.onrender.com/todos/getTodos",config);
         console.log(response?.data?.todos);
         if(response?.data?.todos)setTodos(response?.data?.todos)
   
