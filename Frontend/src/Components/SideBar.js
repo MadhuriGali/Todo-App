@@ -5,9 +5,9 @@ import { BsFillGridFill } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import '../custom-scrollbar.css';
+import {motion} from 'framer-motion'
 
-
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import BoardCard from "./BoardCard";
 const SideBar=()=>{
     //console.log("sidebar is rendering")
@@ -51,7 +51,8 @@ const SideBar=()=>{
    }
 
     return (
-        <div>
+        <motion.div
+        >
             {
             
                 <div className="bg-black bg-opacity-80  ">
@@ -60,7 +61,9 @@ const SideBar=()=>{
                 <div className="bg-black bg-opacity-85  w-16 h-screen rounded-xl text-gray-300 cursor-pointer p-4" onClick={handleClick}>
                 <BsFillGridFill />
                 </div>:
-                <div className="bg-black bg-opacity-85  w-64 h-screen rounded-xl">
+                <motion.div
+               
+                 className="bg-black bg-opacity-85  w-64 h-screen rounded-xl">
                 <div className="flex justify-between px-4 pt-4 pb-2 text-gray-300 border-b border-gray-400">
                     <div className="py-2 cursor-pointer" onClick={handleClick}><BsXSquare /></div>
                     <h1 className="font-semibold text-2xl px-14">Menu</h1>
@@ -70,16 +73,19 @@ const SideBar=()=>{
                     <div className="pt-2 cursor-pointer" onClick={()=>deleteAllBoards()}><FaRegTrashCan /></div>
                 </div>
                 <div className="h-96 overflow-auto custom-scrollbar">
-                            {boards.map((board) => (
+                            {boards.length>0 && boards.map((board) => (
                                 <BoardCard key={board.id} board={board} deleteCard={() => setIsDeleted(!isDeleted)} />
                             ))}
                         </div>
-                <div className="bg-gray-500 pl-28 py-3 rounded-xl mt-3  mx-2 cursor-pointer " onClick={handleAdd}><FaPlus /></div>    
-            </div>
+                        <Link to={"/addBoard"}> <div
+                        
+                         className="bg-gray-500 pl-28 py-3 rounded-xl mt-3  mx-2 cursor-pointer "><FaPlus /></div> </Link>
+                  
+            </motion.div>
             } 
         </div>
             }
-        </div>
+        </motion.div>
         
     )
 }

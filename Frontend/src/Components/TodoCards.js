@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import '../custom-scrollbar.css';
+import {motion} from 'framer-motion'
 const TodoCards=(props)=>{
     console.log("todocard is rendering")
     const {boardname,todos,deleteCard}=props;
@@ -42,7 +43,13 @@ const TodoCards=(props)=>{
         <div>
             {
                 done?
-                <div className="flex flex-wrap ">
+                <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ delay: 0.1 }}
+                
+                className="flex flex-wrap ">
        
         <div className="w-64 h-64 bg-gray-600  rounded-xl mx-2 ml-5   px-6 py-2 mt-7 ">
         <div className="overflow-auto h-40 custom-scrollbar">
@@ -64,9 +71,14 @@ const TodoCards=(props)=>{
         </div>
        
       
-        </div>:
+        </motion.div>:
 
-<div className="flex flex-wrap ">
+<motion.div
+ initial={{ opacity: 0, x: -50 }}
+ animate={{ opacity: 1, x: 0 }}
+ exit={{ opacity: 0, x: -50 }}
+ transition={{ delay: 0.1 }}
+className="flex flex-wrap ">
        
 <div className="w-64 h-64 bg-gray-600 border-4 border-pink-600 rounded-xl mx-2 ml-5   px-6 py-2 mt-7 ">
     <div className="overflow-auto h-40 custom-scrollbar">
@@ -89,7 +101,7 @@ const TodoCards=(props)=>{
 </div>
 
 
-</div>
+</motion.div>
             }
         </div>
 

@@ -7,7 +7,7 @@ export const signUp=async (name,email,password)=>{
         email,
         password
     });
-   // console.log(response);
+   localStorage.setItem("username",name);
     return response;
     }catch(error){
         console.log(error.response);

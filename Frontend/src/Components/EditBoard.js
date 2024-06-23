@@ -1,6 +1,5 @@
 import SideBar from "./SideBar";
-
-
+import {motion} from 'framer-motion'
 import axios from "axios"
 import { useNavigate, useParams } from 'react-router-dom';
 import { useState } from "react";
@@ -42,7 +41,12 @@ const EditBoard=()=>{
     return(
         <div className="flex  bg-gray-900 text-white">
             <SideBar/>
-            <div className="md:w-3/12 mx-auto my-36 ">
+            <motion.div
+             initial={{ opacity: 0, y: 250 }}
+             animate={{ opacity: 1, y: 0 }}
+             exit={{ opacity: 0, x: -50 }}
+             transition={{ delay: 0.1,type:'spring',stiffness:170 }}
+            className="md:w-3/12 mx-auto my-36 ">
             <div className="border border-gray-300 ">
                 <div className="flex justify-between p-4">
                     <h1 className="text-lg px-4">Edit Board</h1>
@@ -56,7 +60,7 @@ const EditBoard=()=>{
                     <button className="p-4  w-80 border border-gray-300 m-4 rounded-xl" onClick={updateData}>Add</button>
                  
             </div>
-        </div>
+        </motion.div>
 
         </div>
     )

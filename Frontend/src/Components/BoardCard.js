@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FiEdit } from "react-icons/fi";
 import { MdDelete } from "react-icons/md";
 import axios from "axios";
+import {motion } from 'framer-motion'
 const BoardCard=(props)=>{
     const {board,deleteCard}=props;
     const [isHovered,setIsHovered]=useState(false)
@@ -36,7 +37,11 @@ const BoardCard=(props)=>{
 
 
     return (
-      <div 
+      <motion.div 
+      initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -50 }}
+        transition={{ delay: 0.1 }}
       className="flex  justify-between bg-gray-500 py-2 my-2 rounded-xl mx-2 text-white cursor-pointer  "
       onClick={() => handleBoardClick(board.boardname)}
       onMouseEnter={() => setIsHovered(true)}
@@ -53,7 +58,7 @@ const BoardCard=(props)=>{
               <MdDelete className="w-5 h-5" onClick={(event)=>handleDelete(event,board.boardname)}/>
           </div>
       }
-  </div>
+  </motion.div>
     )
 }
 
