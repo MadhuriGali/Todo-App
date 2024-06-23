@@ -5,7 +5,7 @@
 #### [Front End (Todo-App/FE)](https://github.com/MadhuriGali/Todo-App/tree/main/Frontend):React + Tailwind CSS + Axios
 #### [Back End (Todo-App/BE)](https://github.com/MadhuriGali/Todo-App/tree/main/backend):Node.js + Express.js + MongoDB 
 ## Prod
-#### Web App @ [Todo App] (https://todo-2d5fjv926-madhus-projects-e4c58fb9.vercel.app)
+#### Web App @ [Todo App](https://todo-2d5fjv926-madhus-projects-e4c58fb9.vercel.app/)
 ---
 #### Todo App is a simple yet powerful tool designed to help individuals organize and manage tasks efficiently
 - ####  Users can easily add new tasks to their todo list, specifying task details such as title, description
