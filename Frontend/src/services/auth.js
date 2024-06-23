@@ -21,7 +21,7 @@ export const login=async (email,password)=>{
         const response=await axios.post("https://todo-app-315b.onrender.com/user/login",{
             email,password
         })
-       // console.log(response);
+       
         return response;
     }catch(error){
         console.log(error.response);
